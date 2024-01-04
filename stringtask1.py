@@ -10,9 +10,11 @@ for char in st:
         numbers.append(current_number)
         current_number = ''
 
-
+# Adding the last number if there's any
 if current_number:
     numbers.append(current_number)
+
+numbers.append('33')   # Add '33' to the list
 
 result = ','.join(numbers)
 print(result)
